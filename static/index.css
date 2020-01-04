@@ -1,0 +1,39 @@
+body {
+    color: #333;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-bar {
+    align-content: center;
+    background: #0d6947;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+}
+
+.top-bar-name {
+    font-size: 1.8rem;
+    vertical-align: middle;;
+}
+
+.top-bar-link {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: underline;
+    vertical-align: middle;
+}
+
+.top-bar-link:visited {
+    color: #ffffff;
+}
+
+.content {
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+}
