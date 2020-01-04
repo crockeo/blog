@@ -8,9 +8,7 @@
     <body>
         {{ partial "top-bar.html" . }}
 
-        <div class="content">
-            {{ block "main" . }}
-            {{ end }}
-        </div>
+        {{ block "main" . }}
+        {{ end }}
     </body>
 </html>

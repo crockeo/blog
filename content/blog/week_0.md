@@ -1,6 +1,7 @@
 ---
 title: Recurse 2020, Week 0
 date: "2020-01-04"
+summary: "Perspectives on my last time at the Recurse Center."
 ---
 
 # Week 0
