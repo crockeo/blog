@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 
 <html>
-    {{ partial "head.html" . }}
+    <head>
+        {{ partial "head/index.html" . }}
+        {{ partial "head/blog.html" . }}
+    </head>
 
     <body>
         {{ partial "top-bar.html" .  }}
 
-        {{ .Title }}
+        <div class="blog-content">
+            <a class="blog-title" href="{{.Permalink}}">
+                {{.Title}}
 
-        {{ .Content }}
+                <div class="blog-title-date">{{ .Date.Format "Jan 2, 2006" }}</div>
+            </a>
+
+            <div class="blog-text-container">
+                {{.Content}}
+            </div>
+        </div>
     </body>
 </html>

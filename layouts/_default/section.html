@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 
 <html>
-    {{ partial "head.html" . }}
+    <head>
+        {{ partial "head/index.html" . }}
+    </head>
 
     <body>
         {{ partial "top-bar.html" . }}
 
-        {{ block "main" . }}
-        {{ end }}
+        <div class="content">
+            {{ block "main" . }}
+            {{ end }}
+        </div>
     </body>
 </html>
