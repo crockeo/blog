@@ -3,19 +3,31 @@
     <link rel="stylesheet" href="/list.css">
 
     <div class="list-container">
-        {{ range .Pages }}
-            <div class="list-item">
-                <a class="list-item-link" href="{{.Permalink}}">{{.Title}}</a>
+        <div class="list-details">
+            {{ range .Pages }}
+                <div class="list-details-item">
+                    <a class="list-details-link" href="{{.Permalink}}">{{.Title}}</a>
 
-                <div class="list-item-date">
-                    {{ .Date.Format "2006-01-02" }}
-                </div>
+                    <div class="list-details-date">
+                        {{ .Date.Format "2006-01-02" }}
+                    </div>
 
-                <div class="list-item-summary">
-                    {{.Summary}}
+                    <div class="list-details-text">
+                        {{.Content}}
+                    </div>
                 </div>
-            </div>
-        {{ end }}
+            {{ end }}
+        </div>
+
+        <div class="list-titles">
+            {{ range .Pages }}
+                <div class="list-titles-item">
+                    <a class="list-titles-link" href="{{.Permalink}}">{{.Title}}</a>
+                    <div class="list-titles-date">{{ .Date.Format "2006-01-02" }}</div>
+                    <div class="list-titles-summary">{{.Summary}}</div>
+                </div>
+            {{ end }}
+        </div>
     </div>
 </main>
 {{ end }}
