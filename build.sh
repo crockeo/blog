@@ -12,3 +12,9 @@ hugo
 # Placing them into the GH pages repo
 rm -r crockeo.github.io/*
 mv public/* crockeo.github.io/
+
+# Pushing a blog post
+cd crockeo.github.io
+git add .
+git commit -m "Build at $(date +"%Y-%m-%d %H:%M:%S")"
+git push
